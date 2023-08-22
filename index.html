@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h2>Interactive</h2>
+            <h4>Geometry Genius</h4>
+        </div>
+        <div>
+            <button class="btn-blog"><a href="blog.html" target="_blank">Blog</a></button>
+        </div>
+    </header>
+    <!--header part end-->
+    <main>
+        <!--alllll box-->
+        <section class="container">
+            <div class="box" id="box-one" style="background-color: #581845;">
+                <img src="images/triangle.png" alt="">
+                <h3 id="first-name">Triangle</h3>
+                <p>Area(A) = 0.5 * b * h</p>
+                <input  id="b-input" type="text" placeholder="b">
+                <span> cm </span>
+                <input  id="h-input" type="text" placeholder="h">
+                <span> cm </span>
+                <br>
+                <button  id="first-calculate" class="btn-calculate">Calculate</button>
+            </div>
+
+            <div class="box">
+                <img src="images/rectangle.png" alt="">
+                <h3 id="rectangle-name">Rectangle</h3>
+                <p>Area(A) = w * i</p>
+                <input type="text" placeholder="w" id="w-input">
+                <span> cm </span>
+                <input type="text" placeholder="l"id="l-input">
+                <span> cm </span>
+                <br>
+                <button class="btn-calculate" id='second-calculate'>Calculate</button>
+            </div>
+            <div class="box">
+                <img src="images/parallelogram.png" alt="">
+                <h3 id="Parallelogram-name">Parallelogram</h3>
+                <p>Area(A) = b * h</p>
+                <input type="text" id="pb-input" placeholder="b">
+                <span> cm </span>
+                <input type="text" id="ph-input" placeholder="h">
+                <span> cm </span>
+                <br>
+                <button class="btn-calculate" id='third-calculate'>Calculate</button>
+            </div>
+            <div class="box"> 
+
+                <h2>Area Calculation</h2>
+                <table id="for-triangle"></table>
+                <table id="for-rectangle"></table>
+                <table id="for-Parallelogram"></table>
+                <table id="for-rhombus"></table>
+                <table id="for-pentagon"></table>
+                <table id="for-Ellipse"></table>
+
+            </div>
+        </section>
+        <section class="container">
+            <div class="box">
+                <img src="images/rhombus.png" alt="">
+                <h3 id="rhombus-name">Rhombus</h3>
+                <p>Area(A) = 0.5 * d <sub>2</sub> * d<sub>2</sub></p>
+                <input type="text" placeholder="d" id="d1-input">
+                <span> cm </span>
+                <input type="text" placeholder="d" id="d2-input">
+                <span> cm </span>
+                <br>
+                <button class="btn-calculate" id='four-calculate'>Calculate</button>
+            </div>
+            <div class="box">
+                <img src="images/pentagon.png" alt="">
+                <h3 id="Pentagon-name">Pentagon</h3>
+                <p>Area(A) =0.5 * p * b</p>
+                <input type="text" id="pentagonP-input" placeholder="p">
+                <span> cm </span>
+                <input type="text" id="pentagonB-input" placeholder="b">
+                <span> cm </span>
+                <br>
+                <button class="btn-calculate" id='five-calculate'>Calculate</button>
+            </div>
+            <div class="box">
+                <img src="images/ellipse.png" alt="">
+                <h3 id="Ellipse-name">Ellipse</h3>
+                <p>Area(A) =πab</p>
+                <input type="text" id="ellipseA-input" placeholder="a">
+                <span> cm </span>
+                <input type="text" id="ellipseB-input" placeholder="b">
+                <span> cm </span>
+                <br>
+                <button class="btn-calculate" id='six-calculate'>Calculate</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="math.js"></script>
+</body>
+</html>
