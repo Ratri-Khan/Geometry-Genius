@@ -1,0 +1,98 @@
+*{margin: 0;
+    padding: 0;}
+    
+    .header{
+        max-width: 100%;
+        margin: 30px auto;
+        background-color: #581845;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        color: #fff;
+    }
+    .btn-blog a{
+        border: none;
+        border-radius:5px;
+        padding:12px 18px;
+        background-color: aliceblue;
+        color: #000;
+        font-size: 20px;
+        font-weight:bold;
+        text-decoration:none ;
+    }
+    
+    .box{
+        width: 25%;
+        height:300px;
+        background-color: #faebf5;
+        padding: 2%;
+        border: 1px solid #581845;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .box:hover{
+        background-color: #581845;
+    }
+    #box-one:hover{background-color: #faebf5 !important ;} 
+    .box h3{margin:10px;}
+    .box img{
+        width:100px;
+        height: 100px;
+    }
+    .container{
+                max-width: 100%;
+                margin: 30px auto;
+                display: flex;
+                padding: 15px;
+                justify-content: space-around; }
+    .box input{
+        width:40px;
+        background-color: aliceblue;;
+        padding:15px 25px;
+        margin: 15px 0px;
+        border-radius:5px;
+    }
+    .btn-calculate{
+        border-radius: 5px;
+        padding: 10px 80px;
+        background-color: aliceblue;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .quiestion{
+        max-width:100%;
+        background-color: hwb(318 74% 6%);
+        margin: 40px auto ;
+        padding: 40px;
+    }
+    .quiestion h2{
+        color:red;
+        margin: 8px 0px;
+    }
+    
+    /*for responsive*/
+    
+    @media  screen and (max-width: 576px){
+        *{margin:0px;padding:0px}
+        .header{
+            width: 100%;
+            display: flex;
+        }
+        .box{
+            margin-bottom: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            width: 100%;
+        }
+        .quiestion{
+            width:100%;
+            display: flex;
+            flex-direction:column;
+        }
+        .quiestion h2{width: 100%;}
+        .quiestion p{width: 100%;}
+    }
